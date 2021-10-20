@@ -1,0 +1,66 @@
+-- this is an example
+group: museopresentacion 
+
+exposicion = {
+	exp_id:number, exp_nombre:string
+	1003, DaVinci
+  1004, Renacimiento
+  1005, Cubismo
+  1006, Impresionismo
+}
+
+obra = {
+	obr_id:number, obr_nombre:string, obr_tipo:string, obr_costo:number, exp_id:number
+	111, "Mona Lisa", Pintura, 1000, 1003
+  112, "Ultima Cena", Pintura, 800, 1003
+  113, "Hombre Vitrubio", Boceto, 400, 1003
+  114, "Planos", Planos, 200, 1003
+	200, "Fornarina", Pintura, 400, 1004
+	201, "David", Escultura, 700, 1004
+	202, "Nacimiento de Venus", Pintura,250, 1004
+	300, "Violin and Candlestick", Pintura, 300, 1005
+	301, "Les demoiselles dAvignon", Pintura, 350, 1005
+	302, "Cabeza de Mujer", Escultura, 300, 1005
+	400, "Autoretrato", Pintura, 100, 1006
+	401, "La Paradis", Pintura, 300, 1006
+	402, "Solei Levant", Pintura, 300, 1006
+}
+
+museo = {
+mus_id, mus_nombre
+101, 'Louvre'
+102, 'Met'
+203, 'Shangai'
+304, 'Británico'
+}
+
+presentacion = {
+mus_id:number, obr_id:number, pre_fecha:string
+'101', 111, Ene-mar-2013
+'101', 111, Oct-dic-2013
+'101', 112, Ene-mar-2013
+'101', 200, May-sept-2013
+'101', 201, May-sept-2013
+'101', 113, Oct-dic-2013
+'102', 300, Ene-jul-2013
+'102', 301, Ene-jul-2013
+'102', 113, Abr-jun-2013
+'102', 113, Sept-2013
+'102', 112, Abr-jun-2013
+'102', 112, Sept-2013
+'102', 202, Ene-abr-2013
+'102', 201, Ene-abr-2013
+'203', 113, jul.-2013
+'203', 114, jul.-2013
+'203', 401, Marz-jun-2013
+'203', 402, Marz-jun-2013
+'203', 301, Oct-dic-2013
+'203', 302, Oct-dic-2013
+'203', 200, Oct-dic-2013
+'203', 202, Oct-dic-2013
+'304', 402, Ago-nov-2013
+'304', 400, Ago-nov-2013
+'304', 114, Jul-ago-2013
+'304', 111, Jul-ago-2013
+}
+

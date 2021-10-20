@@ -1,0 +1,5 @@
+INSERT INTO `mydb`.`empleado` (`idEmpleado_emp`, `Tipo_emp`, `Turno_emp`, `Terminal_idTerminal`) VALUES ('1001', 'Conductor', '2021-08-24', '4');
+INSERT INTO `mydb`.`empleado` (`idEmpleado_emp`, `Tipo_emp`, `Turno_emp`, `Terminal_idTerminal`) VALUES ('1002', 'Conductor', '2021-08-24', '5');
+INSERT INTO `mydb`.`empleado` (`idEmpleado_emp`, `Tipo_emp`, `Turno_emp`, `Terminal_idTerminal`) VALUES ('1003', 'Conductor', '2021-08-24', '5');
+INSERT INTO `mydb`.`empleado` (`idEmpleado_emp`, `Tipo_emp`, `Turno_emp`, `Terminal_idTerminal`) VALUES ('1004', 'Conductor', '2021-08-24', '1');
+INSERT INTO `mydb`.`empleado` (`idEmpleado_emp`, `Tipo_emp`, `Turno_emp`, `Terminal_idTerminal`) VALUES ('1005', 'Conductor', '2021-08-24', '3');

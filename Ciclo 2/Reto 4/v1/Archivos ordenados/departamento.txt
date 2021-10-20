@@ -1,0 +1,25 @@
+-- -----------------------------------------------------
+-- Table `mydb`.`Departamento`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Departamento` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Departamento` (
+  `Empleado_idEmpleado` INT NULL,
+  `Empleado_Terminal_idTerminal` INT NULL,
+  `Empleado_idEmpleado1` INT NULL,
+  `Empleado_Terminal_idTerminal1` INT NULL,
+  `id Equipo` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id Equipo`),
+  INDEX `fk_Empleado_has_Empleado_Empleado2_idx` (`Empleado_idEmpleado1` ASC, `Empleado_Terminal_idTerminal1` ASC) VISIBLE,
+  INDEX `fk_Empleado_has_Empleado_Empleado1_idx` (`Empleado_idEmpleado` ASC, `Empleado_Terminal_idTerminal` ASC) VISIBLE,
+  CONSTRAINT `fk_Empleado_has_Empleado_Empleado1`
+    FOREIGN KEY (`Empleado_idEmpleado` , `Empleado_Terminal_idTerminal`)
+    REFERENCES `mydb`.`Empleado` (`idEmpleado` , `Terminal_idTerminal`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Empleado_has_Empleado_Empleado2`
+    FOREIGN KEY (`Empleado_idEmpleado1` , `Empleado_Terminal_idTerminal1`)
+    REFERENCES `mydb`.`Empleado` (`idEmpleado` , `Terminal_idTerminal`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;

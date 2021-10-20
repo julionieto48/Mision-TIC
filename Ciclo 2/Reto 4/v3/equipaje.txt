@@ -1,0 +1,1 @@
+INSERT INTO `mydb`.`equipaje` (`idEquipaje_eq`, `Peso_eq`, `Sobredimensionado_eq`, `Valor_eq`) VALUES ('R51v6', '5', 'No', '500');

@@ -1,0 +1,21 @@
+-- -----------------------------------------------------
+-- Table `mydb`.`Autobus`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Autobus` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Autobus` (
+  `idAutobus` INT NOT NULL,
+  `Capacidad` INT NULL,
+  `Marca` VARCHAR(45) NULL,
+  `Modelo` VARCHAR(45) NULL,
+  `Compañia` VARCHAR(45) NULL,
+  PRIMARY KEY (`idAutobus`))
+ENGINE = InnoDB;
+
+INSERT INTO `mydb`.`autobus` (`idAutobus`, `Capacidad`, `Marca`, `Modelo`, `Compañia`) VALUES ('001', '50', 'Volvo', '90', 'Trans Caribe');
+INSERT INTO `mydb`.`autobus` (`idAutobus`, `Capacidad`, `Marca`, `Modelo`, `Compañia`) VALUES ('002', '78', 'Mercedes', '94', 'Trans Miseria');
+INSERT INTO `mydb`.`autobus` (`idAutobus`, `Capacidad`, `Marca`, `Modelo`, `Compañia`) VALUES ('003', '45', 'Volvo', '98', 'Bolivariano');
+INSERT INTO `mydb`.`autobus` (`idAutobus`, `Capacidad`, `Marca`, `Modelo`, `Compañia`) VALUES ('004', '55', 'Chevrolet', '92', 'Trans Caribe');
+INSERT INTO `mydb`.`autobus` (`idAutobus`, `Capacidad`, `Marca`, `Modelo`, `Compañia`) VALUES ('005', '20', 'Mercedes', '98', 'Bolivariano');
+INSERT INTO `mydb`.`autobus` (`idAutobus`, `Capacidad`, `Marca`, `Modelo`, `Compañia`) VALUES ('006', '32', 'Chevrolet', '85', 'Trans Parencia');
+INSERT INTO `mydb`.`autobus` (`idAutobus`, `Capacidad`, `Marca`, `Modelo`, `Compañia`) VALUES ('007', '55', 'Volvo', '95', 'Trans Caribe');

@@ -1,0 +1,43 @@
+-- -----------------------------------------------------
+-- Table `mydb`.`Pasajero`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Pasajero` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Pasajero` (
+  `idPasajero` INT NOT NULL,
+  `Terminal_idTerminal` INT NOT NULL,
+  `Cedula` INT NULL,
+  `Nombre` VARCHAR(45) NULL,
+  `Sexo` VARCHAR(45) NULL,
+  `Direccion` VARCHAR(45) NULL,
+  `Telefono` INT NULL,
+  `VIP` VARCHAR(45) NULL,
+  `Edad` VARCHAR(45) NULL,
+  `Equipaje_idEquipaje` INT NULL,
+  PRIMARY KEY (`idPasajero`, `Terminal_idTerminal`),
+  INDEX `fk_Pasajero_Terminal_idx` (`Terminal_idTerminal` ASC) VISIBLE,
+  INDEX `fk_Pasajero_Equipaje1_idx` (`Equipaje_idEquipaje` ASC) VISIBLE,
+  CONSTRAINT `fk_Pasajero_Terminal`
+    FOREIGN KEY (`Terminal_idTerminal`)
+    REFERENCES `mydb`.`Terminal` (`idTerminal`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Pasajero_Equipaje1`
+    FOREIGN KEY (`Equipaje_idEquipaje`)
+    REFERENCES `mydb`.`Equipaje` (`idEquipaje`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`, `Equipaje_idEquipaje`) VALUES ('1', '1', '123456789', 'Jaime ', 'M', '789', '456', 'SI', '25', '2');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`, `Equipaje_idEquipaje`) VALUES ('2', '2', '756489325', 'Juana', 'F', '236', '756', 'NO', '35', '5');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`, `Equipaje_idEquipaje`) VALUES ('3', '3', '754186', 'Pipe', 'M', '157', '289', 'NO', '78', '1');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`, `Equipaje_idEquipaje`) VALUES ('4', '1', '155786348', 'Lucia', 'F', '775', '885', 'SI', '14', '3');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`) VALUES ('5', '2', '772949348', 'Francy', 'F', '389', '761', 'NO', '48');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`, `Equipaje_idEquipaje`) VALUES ('6', '4', '766542232', 'Pipe', 'M', '764', '389', 'NO', '19', '4');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`) VALUES ('7', '5', '864552181', 'Santiago', 'M', '784', '157', 'SI', '27');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`, `Equipaje_idEquipaje`) VALUES ('8', '6', '445441794', 'Valeria', 'F', '735', '951', 'NO', '18', '6');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`, `Equipaje_idEquipaje`) VALUES ('9', '5', '348444758', 'Orlando', 'M', '545', '657', 'NO', '32', '3');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`) VALUES ('10', '6', '318764559', 'Nicolas', 'M', '283', '367', 'NO', '22');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`, `Equipaje_idEquipaje`) VALUES ('11', '3', '266687328', 'Alejandra', 'F', '058', '786', 'SI', '28', '2');
+INSERT INTO `mydb`.`pasajero` (`idPasajero`, `Terminal_idTerminal`, `Cedula`, `Nombre`, `Sexo`, `Direccion`, `Telefono`, `VIP`, `Edad`, `Equipaje_idEquipaje`) VALUES ('12', '2', '866614589', 'Camila', 'F', '338', '791', 'NO', '30', '7');

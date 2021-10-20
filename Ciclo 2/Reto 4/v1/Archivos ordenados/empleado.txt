@@ -1,0 +1,18 @@
+-- -----------------------------------------------------
+-- Table `mydb`.`Empleado`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Empleado` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Empleado` (
+  `idEmpleado` INT NOT NULL,
+  `Tipo` VARCHAR(45) NULL,
+  `Turno` VARCHAR(45) NULL,
+  `Terminal_idTerminal` INT NOT NULL,
+  PRIMARY KEY (`idEmpleado`, `Terminal_idTerminal`),
+  INDEX `fk_Empleado_Terminal1_idx` (`Terminal_idTerminal` ASC) VISIBLE,
+  CONSTRAINT `fk_Empleado_Terminal1`
+    FOREIGN KEY (`Terminal_idTerminal`)
+    REFERENCES `mydb`.`Terminal` (`idTerminal`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;

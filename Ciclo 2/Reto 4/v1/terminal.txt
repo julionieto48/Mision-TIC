@@ -1,0 +1,8 @@
+INSERT INTO `mydb`.`terminal` (`idTerminal`, `Ciudad`, `Aforo`) VALUES ('001', 'Bogota', '500');
+INSERT INTO `mydb`.`terminal` (`idTerminal`, `Ciudad`, `Aforo`) VALUES ('002', 'Cali', '200');
+INSERT INTO `mydb`.`terminal` (`idTerminal`, `Ciudad`, `Aforo`) VALUES ('003', 'Santa Marta', '250');
+INSERT INTO `mydb`.`terminal` (`idTerminal`, `Ciudad`, `Aforo`) VALUES ('004', 'Cartagena', '320');
+INSERT INTO `mydb`.`terminal` (`idTerminal`, `Ciudad`, `Aforo`) VALUES ('005', 'Valledupar', '150');
+INSERT INTO `mydb`.`terminal` (`idTerminal`, `Ciudad`, `Aforo`) VALUES ('006', 'Barranquilla', '499');
+INSERT INTO `mydb`.`terminal` (`idTerminal`, `Ciudad`, `Aforo`) VALUES ('007', 'Medellin', '501');
+INSERT INTO `mydb`.`terminal` (`idTerminal`, `Ciudad`, `Aforo`) VALUES ('008', 'Pasto', '150');

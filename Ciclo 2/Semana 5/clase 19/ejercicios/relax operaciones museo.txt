@@ -1,0 +1,6 @@
+π exp_id (exposicion)
+σ obr_tipo='Pintura' (obra)
+σ obr_costo>500 (obra)
+ρ costosas ←obr_costo σ obr_costo>500 (obra)
+π exposicion.exp_id,exp_nombre,obr_id,obr_nombre (exposicion ⨯ obra x museo) 
+π exposicion.exp_id,exp_nombre,obr_id,obr_nombre (exposicion ⨝ obra) 

@@ -1,0 +1,12 @@
+INSERT INTO mydb.autobus (`idAutobus`, `Empresa`, `Modelo`, `Placa`, `Fabricante`, `Capacidad`, `Vigencia Seguro`, `Disponibilidad`) 
+	VALUES (1, 'Trans Caribe', '75', 'qre789', 'Volvo', 50, '2022-08-29', 'Si')
+	VALUES (2, 'Bolivariano', '90', 'asg456', 'Mercedes, 78, '2022-08-28', 'No')
+        VALUES (3, 'Trans Pasado', '90', 'asd741', 'Chevrolet, 00, '2021-08-29', 'Si')
+	VALUES (4, 'Bolivariano', '97', 'qwr965', 'Audi', 51, '2021-08-30', 'Si')
+
+
+
+
+INSERT INTO mydb.pasajero (`idPasajero`, `Nombre`, `Nacionalidad`, `Genero`, `Telefono`, `Residencia`, `Ciudad de Destino`, `Ciudad Procedencia`, `Edad`, `Terminal_idTerminal`, `Cedula`) 
+	VALUES (1, 'James', 'Esloveno', 'M', 32145678, 'Madrid', 'Cartagena', 'Santa Marta', 25, NULL, 789456123)
+

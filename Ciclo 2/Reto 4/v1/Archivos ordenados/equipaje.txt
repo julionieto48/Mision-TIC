@@ -1,0 +1,13 @@
+-- -----------------------------------------------------
+-- Table `mydb`.`Equipaje`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Equipaje` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Equipaje` (
+  `idEquipaje` INT NOT NULL,
+  `Peso` VARCHAR(45) NULL,
+  `Sobredimensionado?` VARCHAR(45) NULL,
+  `Valor` VARCHAR(45) NULL,
+  PRIMARY KEY (`idEquipaje`))
+ENGINE = InnoDB;
+

@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "carros/src",
+        "ciudad/src"
+    ]
+}

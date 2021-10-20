@@ -1,0 +1,9 @@
+INSERT INTO `mydb`.`ruta` (`Terminal_idTerminal`, `Autobus_idAutobus`, `Sillas_disponibles_rut`, `Fecha_de_salida_rut`, `Precio_rut`, `idRuta_rut`, `Destino_Ruta`) VALUES ('1', '5', '60', '2021-8-28', '50000', '1', '2');
+INSERT INTO `mydb`.`ruta` (`Terminal_idTerminal`, `Autobus_idAutobus`, `Sillas_disponibles_rut`, `Fecha_de_salida_rut`, `Precio_rut`, `idRuta_rut`, `Destino_Ruta`) VALUES ('1', '4', '20', '2021-08-29', '48000', '2', '2');
+INSERT INTO `mydb`.`ruta` (`Terminal_idTerminal`, `Autobus_idAutobus`, `Fecha_de_salida_rut`, `Precio_rut`, `idRuta_rut`, `Destino_Ruta`) VALUES ('3', '2', '2021-08-20', '555000', '3', '4');
+INSERT INTO `mydb`.`ruta` (`Terminal_idTerminal`, `Autobus_idAutobus`, `Sillas_disponibles_rut`, `Fecha_de_salida_rut`, `Precio_rut`, `idRuta_rut`, `Destino_Ruta`) VALUES ('4', '2', '30', '2021-08-20', '555000', '4', '5');
+UPDATE `mydb`.`ruta` SET `Sillas_disponibles_rut` = '50' WHERE (`Terminal_idTerminal` = '3') and (`Autobus_idAutobus` = '2') and (`idRuta_rut` = '3');
+INSERT INTO `mydb`.`ruta` (`Terminal_idTerminal`, `Autobus_idAutobus`, `Sillas_disponibles_rut`, `Fecha_de_salida_rut`, `Precio_rut`, `idRuta_rut`, `Destino_Ruta`) VALUES ('4', '1', '50', '2021-08-20', '45000', '5', '6');
+INSERT INTO `mydb`.`ruta` (`Terminal_idTerminal`, `Autobus_idAutobus`, `Sillas_disponibles_rut`, `Fecha_de_salida_rut`, `Precio_rut`, `idRuta_rut`, `Destino_Ruta`) VALUES ('3', '5', '60', '2021-08-29', '58741', '6', '4');
+INSERT INTO `mydb`.`ruta` (`Terminal_idTerminal`, `Autobus_idAutobus`, `Sillas_disponibles_rut`, `Fecha_de_salida_rut`, `Precio_rut`, `idRuta_rut`, `Destino_Ruta`) VALUES ('3', '7', '45', '2021-08-29', '48987', '7', '4');
+INSERT INTO `mydb`.`ruta` (`Terminal_idTerminal`, `Autobus_idAutobus`, `Sillas_disponibles_rut`, `Fecha_de_salida_rut`, `Precio_rut`, `idRuta_rut`, `Destino_Ruta`) VALUES ('7', '2', '44', '2021-08-28', '48745', '8', '8');

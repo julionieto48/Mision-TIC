@@ -1,0 +1,7 @@
+select * from exposicion;
+select * from obra where obr_tipo='Pintura';
+select * from obra where obr_costo>500;
+select obr_costo as costoso from obra where obr_costo>500;
+select distinct obr_tipo from obra;
+select * from obra , exposicion , museo ;
+select * from obra , exposicion where exposicion.exp_id=obra.exp_id;
