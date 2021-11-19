@@ -1,0 +1,54 @@
+
+<div class="container mt-5">
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+        <div class="row mb-3">
+
+            <div class="col 6">
+                <input type="text" placeholder="first name" >
+    
+            </div>
+    
+            <div class="col 6">
+                <input type="text" placeholder="last name" >
+    
+            </div>
+    
+    
+        </div>
+    
+    
+        <div class="row mb-3">
+    
+            <div class="col 6">
+                <input type="text" placeholder="username" >
+    
+            </div>
+    
+            <div class="col 6">
+                <input type="text" placeholder="e mail" >
+    
+            </div>
+    
+            <div class="col 6">
+                <input type="password" placeholder="password" >
+    
+            </div>
+    
+    
+        </div>
+    
+        <div>
+            <button class="btn btn-primay" type="submit" [disabled]="form.invalid"> Crear Usuario  </button>
+        </div>
+
+
+
+
+    </form>
+
+
+
+
+</div>
